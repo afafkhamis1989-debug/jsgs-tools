@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+
+  <Id>bfdccf24-151f-4e26-9424-ce69f2ef6173</Id>
+  <Version>1.0.1.0</Version>
+  <ProviderName>JSGS Tools</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+
+  <DisplayName DefaultValue="JSGS Tools"/>
+  <Description DefaultValue="Smart Sheet Exporter for Excel."/>
+
+  <IconUrl DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/assets/flogo.png"/>
+  <HighResolutionIconUrl DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/assets/flogo.png"/>
+
+  <SupportUrl DefaultValue="https://github.com/afafkhamis1989-debug/jsgs-tools"/>
+  <AppDomains>
+    <AppDomain>https://afafkhamis1989-debug.github.io</AppDomain>
+  </AppDomains>
+
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/taskpane.html"/>
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="VersionOverridesV1_0">
+
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+
+          <FunctionFile resid="Commands.Url"/>
+
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+
+                <Label resid="CommandsGroup.Label"/>
+
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+
+                <Control xsi:type="Button" id="TaskpaneButton">
+                  <Label resid="TaskpaneButton.Label"/>
+
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>JSGSToolsTaskPane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+
+                </Control>
+
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/assets/flogo.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/assets/flogo.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/assets/flogo.png"/>
+      </bt:Images>
+
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://afafkhamis1989-debug.github.io/jsgs-tools/taskpane.html"/>
+      </bt:Urls>
+
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Welcome to JSGS Tools"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="JSGS Tools"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Open JSGS Tools"/>
+      </bt:ShortStrings>
+
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="JSGS Tools loaded successfully."/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open JSGS Tools Smart Sheet Exporter"/>
+      </bt:LongStrings>
+    </Resources>
+
+  </VersionOverrides>
+</OfficeApp>

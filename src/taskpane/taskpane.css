@@ -1,0 +1,126 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: "Segoe UI", sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fafc 50%,
+        #eef2ff 100%
+    );
+
+    color: #1e293b;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.subtitle {
+    color: #6366f1;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+label {
+    color: #334155;
+    font-size: 13px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #111827;
+    outline: none;
+    margin-top: 8px;
+}
+
+input[type="text"]:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: .95;
+}
+
+.sheet-item {
+    padding: 10px;
+    margin-bottom: 8px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.select-row {
+    margin: 12px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 15px 0;
+}
+
+#result {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #10b981;
+}
+</style>

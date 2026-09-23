@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output (generated fresh by CI for GitHub Pages — not committed)
+dist/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+*token*
+*.local
+
+# Office Add-in dev certificates
+.office-addin-dev-certs/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/temp
+*.tmp
+*.temp
+.cache/
